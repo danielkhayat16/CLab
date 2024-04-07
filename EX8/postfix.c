@@ -50,3 +50,25 @@ void main(void)
 		}
 	}
 }
+
+int sp = 0; /*This is a pointer to the next free stack position*/
+double val[MAXVAL];
+
+void push(double f)
+{
+	if (sp < MAXVAL)
+		val[sp++] = f;
+	else
+		printf("Error: Stack full, can't push %.4f.\n", f);
+}
+
+double pop(void)
+{
+	if (sp > 0)
+		return val[--sp];
+	else
+	{
+		printf("Error: Stack is empty");
+		return 0.0;
+	}
+}
