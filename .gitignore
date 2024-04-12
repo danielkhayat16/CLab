@@ -1,3 +1,7 @@
 EX8/makefile
 EX8/postfix.o
 EX8/postfix
+DSA/main
+DSA/main.o
+DSA/makefile
+DSA/sort.o
